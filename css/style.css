@@ -1,0 +1,179 @@
+@import url('reset.css');
+
+body {
+	padding: 30px 0;
+	font-size: 16px;
+	color: black;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Header start */
+
+.header {
+	margin-bottom: 30px;
+}
+
+.header__nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	color: #828282;
+}
+
+.header__nav a {
+	color: #828282;
+}
+
+.header__nav li:not(:last-child)::after {
+	display: inline-block;
+	margin: 0 5px;
+	content: " / ";
+}
+
+.nav__current-page {
+	color: black;
+}
+
+/* Header end */
+
+/* Main start */
+
+.main__title {
+	margin-bottom: 30px;
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.main__filters {
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+	margin-bottom: 50px;
+}
+
+.main__filter {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	gap: 5px;
+}
+
+#filter__select {
+	padding: 10px 16px;
+	background-color: #f2f2f2;
+	font-size: 14px;
+}
+
+.filter__label {
+	margin-left: 18px;
+	font-size: 12px;
+	color: #4F4F4F;
+}
+
+/* Main end */
+
+/* Card start */
+
+.product-cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+
+.product {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	border: 1px solid #EEEEEE;
+}
+
+.product:hover{
+	transform: translateY(-10px);
+	transition: transform 0.5s;
+	cursor: pointer;
+}
+
+.product__img {
+	margin-bottom: 20px;
+	max-width: 240px;
+	max-height: 240px;
+}
+
+.product__article-number {
+	margin-bottom: 5px;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 140%;
+	color: #888888;
+}
+
+.product__name {
+	margin-bottom: 15px;
+	font-weight: bold;
+	line-height: 140%;
+}
+
+.product__info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.product__old-price {
+	margin-right: 10px;
+	line-height: 140%;
+	text-decoration-line: line-through;
+	color: #888888;
+}
+
+.info__btns {
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+}
+
+.basket-btn {
+	background-image: url('../img/product-card/cart.svg');
+}
+
+.btn-favourite {
+	background-image: url('../img/product-card/heart.svg');
+}
+
+.btn-checked{
+background-image: url('../img/product-card/circle-checked.svg');
+}
+
+.btn {
+	background-size: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+}
+
+.product__discount {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	padding: 5px 15px;
+	background-color: #EB5757;
+	color: #fff;
+	font-size: 14px;
+	line-height: 130%;
+}
+
+.currency::after {
+	content: '₽';
+}
+
+.no-article{
+	margin-bottom: 35px;
+}
+
+/* Card end */

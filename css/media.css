@@ -1,0 +1,25 @@
+@media (max-width: 425px) {
+	.main__title {
+		margin-bottom: 10px;
+		font-size: 28px;
+		color: blue;
+	}
+
+	.main__filters {
+		flex-direction: column;
+		gap: 10px;
+		margin-bottom: 20px;
+	}
+
+	.main__filter{
+		width: 100%;
+	}
+
+	.product-cards{
+		gap: 20px;
+	}
+
+	.product{
+		width: 100%;
+	}
+}
